@@ -1,0 +1,11 @@
+.bounce-img {
+    transition: filter 0.5s ease-in-out;
+}
+
+.bounce-img:hover {
+    filter: hue-rotate(0deg); /* черный */
+}
+
+.bounce-img:hover {
+    filter: hue-rotate(120deg); /* красный */
+}

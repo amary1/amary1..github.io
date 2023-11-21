@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cat Lovers</title>
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="styles/style.css">
+    <!--Icon-->
+    <link type="image/x-icon" href="images/favicon.ico" rel="shortcut icon">
+    <link type="Image/x-icon" href="images/favicon.ico" rel="icon">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/7d7a0f5866.js" crossorigin="anonymous"></script>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Pacifico&family=Poppins:wght@200;300&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <!--Bootstrap-->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+</head>
+
+
+
+<body>
+<section class="section-bg" id="back" style="background-image: url(images/Aboutus.jpg); background-repeat:no-repeat; background-color: rgb(128,128,128); background-blend-mode: multiply;background-position: center;background-size: cover;">
+    <header class="bg-white sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light pt-3 pb-3 logo">
+
+            <a class="navbar-brand nav logo" href="index.html">
+                <img src="images/navbaricon.png"  width="100" height="100" class="d-inline-block align-top" alt="">
+            </a>
+            <div class="float-right">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html"> Home </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contact.html"> Contact Us </a>
+                        </li>
+                        <li class ="nav-item active">
+                            <a class="nav-link" href="Hippoalergic.html"> Hippoalergic Cats </a>
+                        </li>
+                        <li class ="nav-item active">
+                            <a class="nav-link" href="popular.html"> Popular Cats </a>
+                        </li>
+                        <li class ="nav-item active">
+                            <a class="nav-link" href="Children.html"> Cats for Children </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="">
+        <div class="text-center mb-5">
+            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
+            <h1 class="fw-bolder text-light">Get in touch</h1>
+            <p class="lead fw-normal text-light mb-0" >We'd love to hear from you</p>
+        </div>
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-8 col-xl-6">
+
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <!-- Name input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                        <label for="name"><p class="text-light">Full name</p></label>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                    </div>
+
+                    <!-- Email address input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                        <label for="email"><p class="text-light">Email address</p></label>
+                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                    </div>
+
+                    <!-- Phone number input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                        <label for="phone"><p class="text-light">Phone number</p></label>
+                        <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                    </div>
+
+                    <!-- Message input-->
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                        <label for="message"><p class="text-light">Massage </p> </label>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                    </div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            To activate this form, sign up at
+                            <br />
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                    <!-- Submit Button-->
+                    <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-3 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-3">
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/meowcatcafe.kz/" role="button">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="" role="button">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <!--Youtube-->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fab fa-youtube"></i>
+                </a>
+
+                <!--Twitter-->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <h6>Follow us for more content!</h6>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright: Cat Lovers
+            <a class="text-white"></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+</section>
+</body>
+</html>
