@@ -1,2 +1,1 @@
-# 
-#amary1.github.io
+# amary1.github.io
